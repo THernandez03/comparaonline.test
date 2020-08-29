@@ -1,18 +1,24 @@
 import { Product, CarInsurance } from './models';
+import {
+  LOW_COVERAGE,
+  MEDIUM_COVERAGE,
+  FULL_COVERAGE,
+  MEGA_COVERAGE,
+  SPECIAL_FULL_COVERAGE,
+  SUPER_SALE,
+} from './constants';
 
-console.log(Product, CarInsurance);
-
-// const productsAtDayZero = [
-//   new Product("Medium Coverage", 10, 20),
-//   new Product("Full Coverage", 2, 0),
-//   new Product("Low Coverage", 5, 7),
-//   new Product("Mega Coverage", 0, 80),
-//   new Product("Mega Coverage", -1, 80),
-//   new Product("Special Full Coverage", 15, 20),
-//   new Product("Special Full Coverage", 10, 49),
-//   new Product("Special Full Coverage", 5, 49),
-//   new Product("Super Sale", 3, 6),
-// ];
+const productsAtDayZero = [
+  new Product(MEDIUM_COVERAGE, 10, 20),
+  new Product(FULL_COVERAGE, 2, 0),
+  new Product(LOW_COVERAGE, 5, 7),
+  new Product(MEGA_COVERAGE, 0, 80),
+  new Product(MEGA_COVERAGE, -1, 80),
+  new Product(SPECIAL_FULL_COVERAGE, 15, 20),
+  new Product(SPECIAL_FULL_COVERAGE, 10, 49),
+  new Product(SPECIAL_FULL_COVERAGE, 5, 49),
+  new Product(SUPER_SALE, 3, 6),
+];
 
 // const carInsurance = new CarInsurance(productsAtDayZero);
 // const productPrinter = function (product) {
