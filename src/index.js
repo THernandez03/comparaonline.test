@@ -20,14 +20,14 @@ const productsAtDayZero = [
   new Product(SUPER_SALE, 3, 6),
 ];
 
-// const carInsurance = new CarInsurance(productsAtDayZero);
-// const productPrinter = function (product) {
-//   console.log(`${product.name}, ${product.sellIn}, ${product.price}`);
-// };
+const carInsurance = new CarInsurance(productsAtDayZero);
+const productPrinter = ({ name, sellIn, price }) => {
+  console.log(`${name}, ${sellIn}, ${price}`);
+};
 
-// for (let i = 1; i <= 30; i += 1) {
-//   console.log(`Day ${i}`);
-//   console.log("name, sellIn, price");
-//   carInsurance.updatePrice().forEach(productPrinter);
-//   console.log("");
-// }
+for (let dayCount = 1; dayCount <= 30; dayCount += 1) {
+  console.log(`Day ${dayCount}`);
+  console.log('name, sellIn, price');
+  carInsurance.updatePrice().forEach((product) => productPrinter(product));
+  console.log('');
+}
