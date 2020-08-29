@@ -1,5 +1,5 @@
 import CarInsurance from './CarInsurance';
-import Product from '../Product';
+import Product from '../Product/Product';
 
 describe('CarInsurance', () => {
   it('Should receive an array of products', () => {
