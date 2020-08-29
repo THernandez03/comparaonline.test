@@ -1,2 +1,2 @@
 export Product from './Product';
-export CarInsurance from './CarInsurance';
+export CarInsurance from './CarInsurance/CarInsurance';
