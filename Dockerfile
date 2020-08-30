@@ -7,6 +7,7 @@ RUN npm i \
 
 FROM node:lts
 WORKDIR /app
+COPY --from=builder /app/coverage /coverage
 COPY --from=builder /app/package.json /app/
 COPY --from=builder /app/dist/ /app/
 RUN npm i
