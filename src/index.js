@@ -25,6 +25,12 @@ const productPrinter = ({ name, sellIn, price }) => {
   console.log(`${name}, ${sellIn}, ${price}`);
 };
 
+console.log(`OMGHAI!`);
+console.log(`Day 0`);
+console.log('name, sellIn, price');
+carInsurance.products.forEach((product) => productPrinter(product));
+console.log('');
+
 for (let dayCount = 1; dayCount <= 30; dayCount += 1) {
   console.log(`Day ${dayCount}`);
   console.log('name, sellIn, price');
