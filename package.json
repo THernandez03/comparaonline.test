@@ -5,8 +5,8 @@
   "description": "Software Engineer ComparaOnline Test",
   "main": "dist/index.js",
   "scripts": {
-    "test": "jest --coverage",
-    "build": "babel src --out-dir dist",
+    "test": "jest src --coverage",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
     "after-30-days": "node --require=@babel/register src/index.js"
   },
   "keywords": [
@@ -17,6 +17,9 @@
     "technical",
     "interview"
   ],
+  "dependencies": {
+    "@babel/runtime": "^7.11.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
